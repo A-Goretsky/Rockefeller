@@ -1,0 +1,936 @@
+[global_tags]
+  #none set
+
+
+# Configuration for telegraf agent
+[agent]
+  interval = "30s"
+  round_interval = true
+  metric_batch_size = 1000
+  metric_buffer_limit = 10000
+  collection_jitter = "0s"
+  flush_interval = "10s"
+  flush_jitter = "0s"
+  precision = ""
+  debug = false
+  quiet = false
+  logfile = ""
+  hostname = ""
+  omit_hostname = false
+
+
+
+
+###############################################################################
+#                            OUTPUT PLUGINS                                   #
+###############################################################################
+
+
+# Configuration for influxdb server to send metrics to
+[[outputs.influxdb]] 
+  urls = ["http://localhost:8086"] # required
+  database = "crv_test1" # required
+  retention_policy = ""
+  write_consistency = "any"
+  timeout = "5s"
+
+
+
+
+###############################################################################
+#                            INPUT PLUGINS                                    #
+###############################################################################
+
+
+
+
+[[inputs.cpu]]
+  percpu = true
+  totalcpu = true
+  collect_cpu_time = false
+
+
+[[inputs.disk]]
+  ignore_fs = ["tmpfs", "devtmpfs", "devfs"]
+
+
+[[inputs.diskio]]
+
+
+# Get kernel statistics from /proc/stat
+[[inputs.kernel]]
+  # no configuration
+
+
+# Read metrics about memory usage
+[[inputs.mem]]
+  # no configuration
+
+
+# Get the number of processes and group them by status
+[[inputs.processes]]
+  # no configuration
+
+
+# Read metrics about swap memory usage
+[[inputs.swap]]
+  # no configuration
+
+
+# Read metrics about system load & uptime
+[[inputs.system]]
+  # no configuration
+
+
+# Retrieves SNMP values from remote agents
+[[inputs.snmp]]
+agents = [ "172.31.0.240:161" ]
+timeout = "5s"
+retries = 3
+version = 1
+community = "public"
+
+
+##measurement name
+name = "debug1"
+
+
+##Tags
+
+
+[[inputs.snmp.field]]
+name = "system_status"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4123"
+
+[[inputs.snmp.field]]
+name = "system_model_number"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4240"
+
+[[inputs.snmp.field]]
+name = "return_air_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4291"
+
+[[inputs.snmp.field]]
+name = "system_name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4329"
+
+[[inputs.snmp.field]]
+name = "server_class"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4553"
+
+[[inputs.snmp.field]]
+name = "supply_fluid_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4624"
+
+[[inputs.snmp.field]]
+name = "high_supply_fluid_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4625"
+
+[[inputs.snmp.field]]
+name = "unit_operating_state"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4706"
+
+[[inputs.snmp.field]]
+name = "unit_control_mode"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4707"
+
+[[inputs.snmp.field]]
+name = "auto_restart_delay"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4710"
+
+[[inputs.snmp.field]]
+name = "shutdown-loss_of_power-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4715"
+
+[[inputs.snmp.field]]
+name = "shutdown-loss_of_power-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4716"
+
+[[inputs.snmp.field]]
+name = "customer_input_1-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4718"
+
+[[inputs.snmp.field]]
+name = "customer_input_1-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4719"
+
+[[inputs.snmp.field]]
+name = "smoke_detected-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4721"
+
+[[inputs.snmp.field]]
+name = "smoke_detected-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4722"
+
+[[inputs.snmp.field]]
+name = "water_under_floor-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4724"
+
+[[inputs.snmp.field]]
+name = "water_under_floor-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4725"
+
+[[inputs.snmp.field]]
+name = "service_required-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4727"
+
+[[inputs.snmp.field]]
+name = "service_required-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4728"
+
+[[inputs.snmp.field]]
+name = "calculated_next_maintenance_month"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4868"
+
+[[inputs.snmp.field]]
+name = "calculated_next_maintenance_year"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4869"
+
+[[inputs.snmp.field]]
+name = "maintenance_ramp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4870"
+
+[[inputs.snmp.field]]
+name = "supply_air_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5002"
+
+[[inputs.snmp.field]]
+name = "return_dew_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5004"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_minimum_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5005"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_maximum_temperature_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5006"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_average_temperature_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5007"
+
+[[inputs.snmp.field]]
+name = "air_temperature_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5008"
+
+[[inputs.snmp.field]]
+name = "cooling_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5009"
+
+[[inputs.snmp.field]]
+name = "heating_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5010"
+
+[[inputs.snmp.field]]
+name = "air_temperature_dead_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5011"
+
+[[inputs.snmp.field]]
+name = "air_temperature_control_sensor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5012"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_calculation"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5013"
+
+[[inputs.snmp.field]]
+name = "high_supply_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5014"
+
+[[inputs.snmp.field]]
+name = "low_supply_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5018"
+
+[[inputs.snmp.field]]
+name = "high_return_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5022"
+
+[[inputs.snmp.field]]
+name = "supply_humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5027"
+
+[[inputs.snmp.field]]
+name = "return_humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5028"
+
+[[inputs.snmp.field]]
+name = "humidity_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5029"
+
+[[inputs.snmp.field]]
+name = "humidification_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5030"
+
+[[inputs.snmp.field]]
+name = "dehumidification_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5031"
+
+[[inputs.snmp.field]]
+name = "humidity_dead_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5032"
+
+[[inputs.snmp.field]]
+name = "high_return_humidity_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5033"
+
+[[inputs.snmp.field]]
+name = "low_return_humidity_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5035"
+
+[[inputs.snmp.field]]
+name = "fan_control_mode"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5047"
+
+[[inputs.snmp.field]]
+name = "fan_speed_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5048"
+
+[[inputs.snmp.field]]
+name = "fan_speed_manual_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5049"
+
+[[inputs.snmp.field]]
+name = "fan_speed_maximum_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5050"
+
+[[inputs.snmp.field]]
+name = "fan_speed_minimum_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5051"
+
+[[inputs.snmp.field]]
+name = "fan_control_sensor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5052"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_name_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_name_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_name_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.3"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_function_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_function_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_function_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.3"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.3"
+
+[[inputs.snmp.field]]
+name = "unit_operating_state_reason"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5074"
+
+[[inputs.snmp.field]]
+name = "bms_timeout_period"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5075"
+
+[[inputs.snmp.field]]
+name = "operating_efficiency"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5076"
+
+[[inputs.snmp.field]]
+name = "fan_speed"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5077"
+
+[[inputs.snmp.field]]
+name = "cooling_capacity_(primary)"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5078"
+
+[[inputs.snmp.field]]
+name = "dehumidifier_utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5079"
+
+[[inputs.snmp.field]]
+name = "reheat_utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5080"
+
+[[inputs.snmp.field]]
+name = "humidifier_utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5081"
+
+[[inputs.snmp.field]]
+name = "ext_loss_of_flow-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5082"
+
+[[inputs.snmp.field]]
+name = "ext_loss_of_flow-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5083"
+
+[[inputs.snmp.field]]
+name = "ext_reheat_lockout-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5084"
+
+[[inputs.snmp.field]]
+name = "ext_reheat_lockout-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5085"
+
+[[inputs.snmp.field]]
+name = "ext_humidifier_lockout-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5086"
+
+[[inputs.snmp.field]]
+name = "ext_humidifier_lockout-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5087"
+
+[[inputs.snmp.field]]
+name = "ext_compressor_lockout-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5088"
+
+[[inputs.snmp.field]]
+name = "ext_compressor_lockout-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5089"
+
+[[inputs.snmp.field]]
+name = "ext_over_temperature-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5090"
+
+[[inputs.snmp.field]]
+name = "ext_over_temperature-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5091"
+
+[[inputs.snmp.field]]
+name = "condenser_vfd_issue-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5092"
+
+[[inputs.snmp.field]]
+name = "condenser_vfd_issue-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5093"
+
+[[inputs.snmp.field]]
+name = "condenser_tvss_issue-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5094"
+
+[[inputs.snmp.field]]
+name = "condenser_tvss_issue-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5095"
+
+[[inputs.snmp.field]]
+name = "condenser_1_issue-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5096"
+
+[[inputs.snmp.field]]
+name = "condenser_1_issue-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5097"
+
+[[inputs.snmp.field]]
+name = "customer_input_2-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5098"
+
+[[inputs.snmp.field]]
+name = "customer_input_2-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5099"
+
+[[inputs.snmp.field]]
+name = "customer_input_3-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5100"
+
+[[inputs.snmp.field]]
+name = "customer_input_3-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5101"
+
+[[inputs.snmp.field]]
+name = "customer_input_4-event_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5102"
+
+[[inputs.snmp.field]]
+name = "customer_input_4-event_type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5103"
+
+[[inputs.snmp.field]]
+name = "system_on/off_control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5143"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.3"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.3"
+
+[[inputs.snmp.field]]
+name = "super_saver_call_for_cooling"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6234"
+
+[[inputs.snmp.field]]
+name = "return_air_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4291"
+
+[[inputs.snmp.field]]
+name = "supply_fluid_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4624"
+
+[[inputs.snmp.field]]
+name = "high_supply_fluid_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4625"
+
+[[inputs.snmp.field]]
+name = "supply_air_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5002"
+
+[[inputs.snmp.field]]
+name = "return_dew_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5004"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_minimum_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5005"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_maximum_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5006"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_average_temperature_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5007"
+
+[[inputs.snmp.field]]
+name = "air_temperature_set_point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5008"
+
+[[inputs.snmp.field]]
+name = "cooling_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5009"
+
+[[inputs.snmp.field]]
+name = "heating_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5010"
+
+[[inputs.snmp.field]]
+name = "air_temperature_dead_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5011"
+
+[[inputs.snmp.field]]
+name = "high_supply_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5014"
+
+[[inputs.snmp.field]]
+name = "low_supply_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5018"
+
+[[inputs.snmp.field]]
+name = "high_return_air_temperature_threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5022"
+
+[[inputs.snmp.field]]
+name = "fan_speed_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5048"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_1_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_1_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_temperature_1_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.3"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_1_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_1_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_a_calibrated_temperature_1_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.3"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_1_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_1_2“
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_b_calibrated_temperature_1_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.3"
+
+[[inputs.snmp.field]]
+name = "customer_input_1"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4270"
+
+[[inputs.snmp.field]]
+name = "customer_input_2"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4271"
+
+[[inputs.snmp.field]]
+name = "customer_input_3"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4272"
+
+[[inputs.snmp.field]]
+name = "customer_input_4"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4273"
+
+[[inputs.snmp.field]]
+name = "supply_chilled_water_over_temp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4626"
+
+[[inputs.snmp.field]]
+name = "supply_fluid_temp_sensor_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4651"
+
+[[inputs.snmp.field]]
+name = "compressor_1_high_head_pressure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4669"
+
+[[inputs.snmp.field]]
+name = "compressor_1_short_cycle"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4681"
+
+[[inputs.snmp.field]]
+name = "chilled_water_control_valve_failure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4703"
+
+[[inputs.snmp.field]]
+name = "shutdown-loss_of_power"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4714"
+
+[[inputs.snmp.field]]
+name = "smoke_detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4720"
+
+[[inputs.snmp.field]]
+name = "water_under_floor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4723"
+
+[[inputs.snmp.field]]
+name = "service_required"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4726"
+
+[[inputs.snmp.field]]
+name = "supply_chilled_water_loss_of_flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4980"
+
+[[inputs.snmp.field]]
+name = "supply_air_over_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5015"
+
+[[inputs.snmp.field]]
+name = "supply_air_under_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5019"
+
+[[inputs.snmp.field]]
+name = "return_air_over_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5023"
+
+[[inputs.snmp.field]]
+name = "supply_air_sensor_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5026"
+
+[[inputs.snmp.field]]
+name = "high_return_humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5034"
+
+[[inputs.snmp.field]]
+name = "low_return_humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5036"
+
+[[inputs.snmp.field]]
+name = "humidifier_hours_exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5037"
+
+[[inputs.snmp.field]]
+name = "dehumidifier_hours_exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5038"
+
+[[inputs.snmp.field]]
+name = "humidifier_under_current"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5039"
+
+[[inputs.snmp.field]]
+name = "humidifier_over_current"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5040"
+
+[[inputs.snmp.field]]
+name = "humidifier_low_water"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5041"
+
+[[inputs.snmp.field]]
+name = "humidifier_cylinder_worn"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5042"
+
+[[inputs.snmp.field]]
+name = "humidifier_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5043"
+
+[[inputs.snmp.field]]
+name = "ext_humidifier_lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5044"
+
+[[inputs.snmp.field]]
+name = "humidifier_control_board_not_detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5045"
+
+[[inputs.snmp.field]]
+name = "return_humidity_out_of_proportional_band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5046"
+
+[[inputs.snmp.field]]
+name = "loss_of_air_flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5053"
+
+[[inputs.snmp.field]]
+name = "fan_hours_exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5054"
+
+[[inputs.snmp.field]]
+name = "top_fan_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5055"
+
+[[inputs.snmp.field]]
+name = "bottom_fan_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5056"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_issue_1_1”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.1"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_issue_1_2”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.2"
+
+[[inputs.snmp.field]]
+name = "remote_sensor_issue_1_3”
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.3"
+
+[[inputs.snmp.field]]
+name = "compressor_1_low_suction_pressure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5062"
+
+[[inputs.snmp.field]]
+name = "compressor_1_hours_exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5063"
+
+[[inputs.snmp.field]]
+name = "dig_scroll_comp_1_temp_sensor_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5064"
+
+[[inputs.snmp.field]]
+name = "dig_scroll_comp_1_over_temp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5065"
+
+[[inputs.snmp.field]]
+name = "compressor_1_low_pressure_transducer_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5066"
+
+[[inputs.snmp.field]]
+name = "ext_compressor_lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5067"
+
+[[inputs.snmp.field]]
+name = "reheater_over_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5068"
+
+[[inputs.snmp.field]]
+name = "electric_reheater_hours_exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5069"
+
+[[inputs.snmp.field]]
+name = "ext_reheat_lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5070"
+
+[[inputs.snmp.field]]
+name = "condenser_1_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5071"
+
+[[inputs.snmp.field]]
+name = "condenser_vfd_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5072"
+
+[[inputs.snmp.field]]
+name = "condenser_tvss_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5073"
+
+[[inputs.snmp.field]]
+name = "ext_over_temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5104"
+
+[[inputs.snmp.field]]
+name = "ext_loss_of_flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5105"
+
+[[inputs.snmp.field]]
+name = "ext_condenser_pump_high_water"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5106"
+
+[[inputs.snmp.field]]
+name = "ext_standby_glycol_pump_on"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5107"
+
+[[inputs.snmp.field]]
+name = "external_fire_detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5108"
+
+[[inputs.snmp.field]]
+name = "unit_on"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5109"
+
+[[inputs.snmp.field]]
+name = "unit_off"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5110"
+
+[[inputs.snmp.field]]
+name = "unit_standby"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5111"
+
+[[inputs.snmp.field]]
+name = "unit_partial_shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5112"
+
+[[inputs.snmp.field]]
+name = "unit_shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5113"
+
+[[inputs.snmp.field]]
+name = "water_leakage_detector_sensor_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5114"
+
+[[inputs.snmp.field]]
+name = "bms_communications_timeout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5115"
+
+[[inputs.snmp.field]]
+name = "maintenance_due"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5116"
+
+[[inputs.snmp.field]]
+name = "maintenance_completed"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5117"
+
+[[inputs.snmp.field]]
+name = "clogged_air_filter"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5118"
+
+[[inputs.snmp.field]]
+name = "ram_battery_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5119"
+
+[[inputs.snmp.field]]
+name = "master_unit_communication_lost"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5120"
+
+[[inputs.snmp.field]]
+name = "high_power_shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5121"
+
+[[inputs.snmp.field]]
+name = "compressor_1_pump_down_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5146"
+
+[[inputs.snmp.field]]
+name = "return_air_sensor_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5147"
+
+[[inputs.snmp.field]]
+name = "compressor_1_high_pressure_transducer_issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5148"
+
+[[inputs.snmp.field]]
+name = "unspecified_general_event"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5588"
+
+[[inputs.snmp.field]]
+name = "system_status"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4123"
+
+[[inputs.snmp.field]]
+name = "system_model_number"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4240"
+
+[[inputs.snmp.field]]
+name = "server_class"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4553"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_01"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6109"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_02"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6110"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_03"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6111"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_04"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6112"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_05"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6113"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_06"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6114"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_07"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6115"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_08"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6116"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_09"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6117"
+
+[[inputs.snmp.field]]
+name = "sensor_order_identifier-slot_10"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6118"
+
+[[inputs.snmp.field]]
+name = "too_many_sensors"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.100.5423"
+
+[[inputs.snmp.field]]
+name = "slots_not_available"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.100.6119"
+

@@ -1,0 +1,273 @@
+System Status
+System Model Number
+Return Air Temperature
+System Date and Time
+System Name
+Server Class
+Supply Fluid Temperature
+High Supply Fluid Temperature Threshold
+Unit Operating State
+Unit Control Mode
+Auto Restart Delay
+Shutdown - Loss Of Power - Event Control
+Shutdown - Loss Of Power - Event Type
+Customer Input 1 - Event Control
+Customer Input 1 - Event Type
+Smoke Detected - Event Control
+Smoke Detected - Event Type
+Water Under Floor - Event Control
+Water Under Floor - Event Type
+Service Required - Event Control
+Service Required - Event Type
+Calculated Next Maintenance Month
+Calculated Next Maintenance Year
+Maintenance Ramp
+Supply Air Temperature
+Return Dew Point
+Remote Sensor Minimum Temperature
+Remote Sensor Maximum Temperature
+Remote Sensor Average Temperature
+Air Temperature Set Point
+Cooling Proportional Band
+Heating Proportional Band
+Air Temperature Dead Band
+Air Temperature Control Sensor
+Remote Sensor Temperature Calculation
+High Supply Air Temperature Threshold
+Low Supply Air Temperature Threshold
+High Return Air Temperature Threshold
+Supply Humidity
+Return Humidity
+Humidity Set Point
+Humidification Proportional Band
+Dehumidification Proportional Band
+Humidity Dead Band
+High Return Humidity Threshold
+Low Return Humidity Threshold
+Fan Control Mode
+Fan Speed Proportional Band
+Fan Speed Manual Set Point
+Fan Speed Maximum Set Point
+Fan Speed Minimum Set Point
+Fan Control Sensor
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Name
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Function
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Unit Operating State Reason
+BMS Timeout Period
+Operating Efficiency
+Fan Speed
+Cooling Capacity (Primary)
+Dehumidifier Utilization
+Reheat Utilization
+Humidifier Utilization
+Ext Loss of Flow - Event Control
+Ext Loss of Flow - Event Type
+Ext Reheat Lockout - Event Control
+Ext Reheat Lockout - Event Type
+Ext Humidifier Lockout - Event Control
+Ext Humidifier Lockout - Event Type
+Ext Compressor Lockout - Event Control
+Ext Compressor Lockout - Event Type
+Ext Over Temperature - Event Control
+Ext Over Temperature - Event Type
+Condenser VFD Issue - Event Control
+Condenser VFD Issue - Event Type
+Condenser TVSS Issue - Event Control
+Condenser TVSS Issue - Event Type
+Condenser 1 Issue - Event Control
+Condenser 1 Issue - Event Type
+Customer Input 2 - Event Control
+Customer Input 2 - Event Type
+Customer Input 3 - Event Control
+Customer Input 3 - Event Type
+Customer Input 4 - Event Control
+Customer Input 4 - Event Type
+System On/Off Control
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Super Saver Call For Cooling
+Return Air Temperature
+Supply Fluid Temperature
+High Supply Fluid Temperature Threshold
+Supply Air Temperature
+Return Dew Point
+Remote Sensor Minimum Temperature
+Remote Sensor Maximum Temperature
+Remote Sensor Average Temperature
+Air Temperature Set Point
+Cooling Proportional Band
+Heating Proportional Band
+Air Temperature Dead Band
+High Supply Air Temperature Threshold
+Low Supply Air Temperature Threshold
+High Return Air Temperature Threshold
+Fan Speed Proportional Band
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor A Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Remote Sensor B Calibrated Temperature
+Customer Input 1
+Customer Input 2
+Customer Input 3
+Customer Input 4
+Supply Chilled Water Over Temp
+Supply Fluid Temp Sensor Issue
+Compressor 1 High Head Pressure
+Compressor 1 Short Cycle
+Chilled Water Control Valve Failure
+Shutdown - Loss Of Power
+Smoke Detected
+Water Under Floor
+Service Required
+Supply Chilled Water Loss of Flow
+Supply Air Over Temperature
+Supply Air Under Temperature
+Return Air Over Temperature
+Supply Air Sensor Issue
+High Return Humidity
+Low Return Humidity
+Humidifier Hours Exceeded
+Dehumidifier Hours Exceeded
+Humidifier Under Current
+Humidifier Over Current
+Humidifier Low Water
+Humidifier Cylinder Worn
+Humidifier Issue
+Ext Humidifier Lockout
+Humidifier Control Board Not Detected
+Return Humidity Out Of Proportional Band
+Loss of Air Flow
+Fan Hours Exceeded
+Top Fan Issue
+Bottom Fan Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Remote Sensor Issue
+Compressor 1 Low Suction Pressure
+Compressor 1 Hours Exceeded
+Dig Scroll Comp 1 Temp Sensor Issue
+Dig Scroll Comp 1 Over Temp
+Compressor 1 Low Pressure Transducer Issue
+Ext Compressor Lockout
+Reheater Over Temperature
+Electric Reheater Hours Exceeded
+Ext Reheat Lockout
+Condenser 1 Issue
+Condenser VFD Issue
+Condenser TVSS Issue
+Ext Over Temperature
+Ext Loss of Flow
+Ext Condenser Pump High Water
+Ext Standby Glycol Pump On
+External Fire Detected
+Unit On
+Unit Off
+Unit Standby
+Unit Partial Shutdown
+Unit Shutdown
+Water Leakage Detector Sensor Issue
+BMS Communications Timeout
+Maintenance Due
+Maintenance Completed
+Clogged Air Filter
+RAM Battery Issue
+Master Unit Communication Lost
+High Power Shutdown
+Compressor 1 Pump Down Issue
+Return Air Sensor Issue
+Compressor 1 High Pressure Transducer Issue
+Unspecified General Event
+System Status
+System Model Number
+Server Class
+Sensor Order Identifier - Slot 01
+Sensor Order Identifier - Slot 02
+Sensor Order Identifier - Slot 03
+Sensor Order Identifier - Slot 04
+Sensor Order Identifier - Slot 05
+Sensor Order Identifier - Slot 06
+Sensor Order Identifier - Slot 07
+Sensor Order Identifier - Slot 08
+Sensor Order Identifier - Slot 09
+Sensor Order Identifier - Slot 10
+Too Many Sensors
+Slots not available

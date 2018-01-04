@@ -1,0 +1,1092 @@
+[[inputs.snmp.field]]
+name = “System_Status"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4123"
+
+[[inputs.snmp.field]]
+name = "System Model Number"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4240"
+
+[[inputs.snmp.field]]
+name = "Return Air Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4291"
+
+[[inputs.snmp.field]]
+name = "System Date and Time"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4293"
+
+[[inputs.snmp.field]]
+name = "System Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4329"
+
+[[inputs.snmp.field]]
+name = "Server Class"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4553"
+
+[[inputs.snmp.field]]
+name = "Supply Fluid Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4624"
+
+[[inputs.snmp.field]]
+name = "High Supply Fluid Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4625"
+
+[[inputs.snmp.field]]
+name = "Unit Operating State"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4706"
+
+[[inputs.snmp.field]]
+name = "Unit Control Mode"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4707"
+
+[[inputs.snmp.field]]
+name = "Auto Restart Delay"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4710"
+
+[[inputs.snmp.field]]
+name = "Shutdown - Loss Of Power - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4715"
+
+[[inputs.snmp.field]]
+name = "Shutdown - Loss Of Power - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4716"
+
+[[inputs.snmp.field]]
+name = "Customer Input 1 - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4718"
+
+[[inputs.snmp.field]]
+name = "Customer Input 1 - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4719"
+
+[[inputs.snmp.field]]
+name = "Smoke Detected - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4721"
+
+[[inputs.snmp.field]]
+name = "Smoke Detected - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4722"
+
+[[inputs.snmp.field]]
+name = "Water Under Floor - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4724"
+
+[[inputs.snmp.field]]
+name = "Water Under Floor - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4725"
+
+[[inputs.snmp.field]]
+name = "Service Required - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4727"
+
+[[inputs.snmp.field]]
+name = "Service Required - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4728"
+
+[[inputs.snmp.field]]
+name = "Calculated Next Maintenance Month"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4868"
+
+[[inputs.snmp.field]]
+name = "Calculated Next Maintenance Year"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4869"
+
+[[inputs.snmp.field]]
+name = "Maintenance Ramp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4870"
+
+[[inputs.snmp.field]]
+name = "Supply Air Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5002"
+
+[[inputs.snmp.field]]
+name = "Return Dew Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5004"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Minimum Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5005"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Maximum Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5006"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Average Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5007"
+
+[[inputs.snmp.field]]
+name = "Air Temperature Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5008"
+
+[[inputs.snmp.field]]
+name = "Cooling Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5009"
+
+[[inputs.snmp.field]]
+name = "Heating Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5010"
+
+[[inputs.snmp.field]]
+name = "Air Temperature Dead Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5011"
+
+[[inputs.snmp.field]]
+name = "Air Temperature Control Sensor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5012"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature Calculation"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5013"
+
+[[inputs.snmp.field]]
+name = "High Supply Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5014"
+
+[[inputs.snmp.field]]
+name = "Low Supply Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5018"
+
+[[inputs.snmp.field]]
+name = "High Return Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5022"
+
+[[inputs.snmp.field]]
+name = "Supply Humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5027"
+
+[[inputs.snmp.field]]
+name = "Return Humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5028"
+
+[[inputs.snmp.field]]
+name = "Humidity Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5029"
+
+[[inputs.snmp.field]]
+name = "Humidification Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5030"
+
+[[inputs.snmp.field]]
+name = "Dehumidification Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5031"
+
+[[inputs.snmp.field]]
+name = "Humidity Dead Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5032"
+
+[[inputs.snmp.field]]
+name = "High Return Humidity Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5033"
+
+[[inputs.snmp.field]]
+name = "Low Return Humidity Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5035"
+
+[[inputs.snmp.field]]
+name = "Fan Control Mode"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5047"
+
+[[inputs.snmp.field]]
+name = "Fan Speed Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5048"
+
+[[inputs.snmp.field]]
+name = "Fan Speed Manual Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5049"
+
+[[inputs.snmp.field]]
+name = "Fan Speed Maximum Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5050"
+
+[[inputs.snmp.field]]
+name = "Fan Speed Minimum Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5051"
+
+[[inputs.snmp.field]]
+name = "Fan Control Sensor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5052"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Name"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5057.10"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Function"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5058.10"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5059.10"
+
+[[inputs.snmp.field]]
+name = "Unit Operating State Reason"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5074"
+
+[[inputs.snmp.field]]
+name = "BMS Timeout Period"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5075"
+
+[[inputs.snmp.field]]
+name = "Operating Efficiency"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5076"
+
+[[inputs.snmp.field]]
+name = "Fan Speed"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5077"
+
+[[inputs.snmp.field]]
+name = "Cooling Capacity (Primary)"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5078"
+
+[[inputs.snmp.field]]
+name = "Dehumidifier Utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5079"
+
+[[inputs.snmp.field]]
+name = "Reheat Utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5080"
+
+[[inputs.snmp.field]]
+name = "Humidifier Utilization"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5081"
+
+[[inputs.snmp.field]]
+name = "Ext Loss of Flow - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5082"
+
+[[inputs.snmp.field]]
+name = "Ext Loss of Flow - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5083"
+
+[[inputs.snmp.field]]
+name = "Ext Reheat Lockout - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5084"
+
+[[inputs.snmp.field]]
+name = "Ext Reheat Lockout - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5085"
+
+[[inputs.snmp.field]]
+name = "Ext Humidifier Lockout - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5086"
+
+[[inputs.snmp.field]]
+name = "Ext Humidifier Lockout - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5087"
+
+[[inputs.snmp.field]]
+name = "Ext Compressor Lockout - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5088"
+
+[[inputs.snmp.field]]
+name = "Ext Compressor Lockout - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5089"
+
+[[inputs.snmp.field]]
+name = "Ext Over Temperature - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5090"
+
+[[inputs.snmp.field]]
+name = "Ext Over Temperature - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5091"
+
+[[inputs.snmp.field]]
+name = "Condenser VFD Issue - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5092"
+
+[[inputs.snmp.field]]
+name = "Condenser VFD Issue - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5093"
+
+[[inputs.snmp.field]]
+name = "Condenser TVSS Issue - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5094"
+
+[[inputs.snmp.field]]
+name = "Condenser TVSS Issue - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5095"
+
+[[inputs.snmp.field]]
+name = "Condenser 1 Issue - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5096"
+
+[[inputs.snmp.field]]
+name = "Condenser 1 Issue - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5097"
+
+[[inputs.snmp.field]]
+name = "Customer Input 2 - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5098"
+
+[[inputs.snmp.field]]
+name = "Customer Input 2 - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5099"
+
+[[inputs.snmp.field]]
+name = "Customer Input 3 - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5100"
+
+[[inputs.snmp.field]]
+name = "Customer Input 3 - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5101"
+
+[[inputs.snmp.field]]
+name = "Customer Input 4 - Event Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5102"
+
+[[inputs.snmp.field]]
+name = "Customer Input 4 - Event Type"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5103"
+
+[[inputs.snmp.field]]
+name = "System On/Off Control"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5143"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6127.10"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6128.10"
+
+[[inputs.snmp.field]]
+name = "Super Saver Call For Cooling"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.6234"
+
+[[inputs.snmp.field]]
+name = "Return Air Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4291"
+
+[[inputs.snmp.field]]
+name = "Supply Fluid Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4624"
+
+[[inputs.snmp.field]]
+name = "High Supply Fluid Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4625"
+
+[[inputs.snmp.field]]
+name = "Supply Air Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5002"
+
+[[inputs.snmp.field]]
+name = "Return Dew Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5004"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Minimum Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5005"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Maximum Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5006"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Average Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5007"
+
+[[inputs.snmp.field]]
+name = "Air Temperature Set Point"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5008"
+
+[[inputs.snmp.field]]
+name = "Cooling Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5009"
+
+[[inputs.snmp.field]]
+name = "Heating Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5010"
+
+[[inputs.snmp.field]]
+name = "Air Temperature Dead Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5011"
+
+[[inputs.snmp.field]]
+name = "High Supply Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5014"
+
+[[inputs.snmp.field]]
+name = "Low Supply Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5018"
+
+[[inputs.snmp.field]]
+name = "High Return Air Temperature Threshold"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5022"
+
+[[inputs.snmp.field]]
+name = "Fan Speed Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5048"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.5059.10"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor A Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6127.10"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor B Calibrated Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.6128.10"
+
+[[inputs.snmp.field]]
+name = "Customer Input 1"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4270"
+
+[[inputs.snmp.field]]
+name = "Customer Input 2"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4271"
+
+[[inputs.snmp.field]]
+name = "Customer Input 3"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4272"
+
+[[inputs.snmp.field]]
+name = "Customer Input 4"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4273"
+
+[[inputs.snmp.field]]
+name = "Supply Chilled Water Over Temp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4626"
+
+[[inputs.snmp.field]]
+name = "Supply Fluid Temp Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4651"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 High Head Pressure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4669"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 Short Cycle"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4681"
+
+[[inputs.snmp.field]]
+name = "Chilled Water Control Valve Failure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4703"
+
+[[inputs.snmp.field]]
+name = "Shutdown - Loss Of Power"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4714"
+
+[[inputs.snmp.field]]
+name = "Smoke Detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4720"
+
+[[inputs.snmp.field]]
+name = "Water Under Floor"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4723"
+
+[[inputs.snmp.field]]
+name = "Service Required"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4726"
+
+[[inputs.snmp.field]]
+name = "Supply Chilled Water Loss of Flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.4980"
+
+[[inputs.snmp.field]]
+name = "Supply Air Over Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5015"
+
+[[inputs.snmp.field]]
+name = "Supply Air Under Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5019"
+
+[[inputs.snmp.field]]
+name = "Return Air Over Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5023"
+
+[[inputs.snmp.field]]
+name = "Supply Air Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5026"
+
+[[inputs.snmp.field]]
+name = "High Return Humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5034"
+
+[[inputs.snmp.field]]
+name = "Low Return Humidity"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5036"
+
+[[inputs.snmp.field]]
+name = "Humidifier Hours Exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5037"
+
+[[inputs.snmp.field]]
+name = "Dehumidifier Hours Exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5038"
+
+[[inputs.snmp.field]]
+name = "Humidifier Under Current"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5039"
+
+[[inputs.snmp.field]]
+name = "Humidifier Over Current"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5040"
+
+[[inputs.snmp.field]]
+name = "Humidifier Low Water"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5041"
+
+[[inputs.snmp.field]]
+name = "Humidifier Cylinder Worn"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5042"
+
+[[inputs.snmp.field]]
+name = "Humidifier Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5043"
+
+[[inputs.snmp.field]]
+name = "Ext Humidifier Lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5044"
+
+[[inputs.snmp.field]]
+name = "Humidifier Control Board Not Detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5045"
+
+[[inputs.snmp.field]]
+name = "Return Humidity Out Of Proportional Band"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5046"
+
+[[inputs.snmp.field]]
+name = "Loss of Air Flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5053"
+
+[[inputs.snmp.field]]
+name = "Fan Hours Exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5054"
+
+[[inputs.snmp.field]]
+name = "Top Fan Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5055"
+
+[[inputs.snmp.field]]
+name = "Bottom Fan Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5056"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.1"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.2"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.3"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.4"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.5"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.6"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.7"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.8"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.9"
+
+[[inputs.snmp.field]]
+name = "Remote Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5060.10"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 Low Suction Pressure"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5062"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 Hours Exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5063"
+
+[[inputs.snmp.field]]
+name = "Dig Scroll Comp 1 Temp Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5064"
+
+[[inputs.snmp.field]]
+name = "Dig Scroll Comp 1 Over Temp"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5065"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 Low Pressure Transducer Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5066"
+
+[[inputs.snmp.field]]
+name = "Ext Compressor Lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5067"
+
+[[inputs.snmp.field]]
+name = "Reheater Over Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5068"
+
+[[inputs.snmp.field]]
+name = "Electric Reheater Hours Exceeded"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5069"
+
+[[inputs.snmp.field]]
+name = "Ext Reheat Lockout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5070"
+
+[[inputs.snmp.field]]
+name = "Condenser 1 Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5071"
+
+[[inputs.snmp.field]]
+name = "Condenser VFD Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5072"
+
+[[inputs.snmp.field]]
+name = "Condenser TVSS Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5073"
+
+[[inputs.snmp.field]]
+name = "Ext Over Temperature"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5104"
+
+[[inputs.snmp.field]]
+name = "Ext Loss of Flow"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5105"
+
+[[inputs.snmp.field]]
+name = "Ext Condenser Pump High Water"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5106"
+
+[[inputs.snmp.field]]
+name = "Ext Standby Glycol Pump On"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5107"
+
+[[inputs.snmp.field]]
+name = "External Fire Detected"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5108"
+
+[[inputs.snmp.field]]
+name = "Unit On"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5109"
+
+[[inputs.snmp.field]]
+name = "Unit Off"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5110"
+
+[[inputs.snmp.field]]
+name = "Unit Standby"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5111"
+
+[[inputs.snmp.field]]
+name = "Unit Partial Shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5112"
+
+[[inputs.snmp.field]]
+name = "Unit Shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5113"
+
+[[inputs.snmp.field]]
+name = "Water Leakage Detector Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5114"
+
+[[inputs.snmp.field]]
+name = "BMS Communications Timeout"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5115"
+
+[[inputs.snmp.field]]
+name = "Maintenance Due"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5116"
+
+[[inputs.snmp.field]]
+name = "Maintenance Completed"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5117"
+
+[[inputs.snmp.field]]
+name = "Clogged Air Filter"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5118"
+
+[[inputs.snmp.field]]
+name = "RAM Battery Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5119"
+
+[[inputs.snmp.field]]
+name = "Master Unit Communication Lost"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5120"
+
+[[inputs.snmp.field]]
+name = "High Power Shutdown"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5121"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 Pump Down Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5146"
+
+[[inputs.snmp.field]]
+name = "Return Air Sensor Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5147"
+
+[[inputs.snmp.field]]
+name = "Compressor 1 High Pressure Transducer Issue"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5148"
+
+[[inputs.snmp.field]]
+name = "Unspecified General Event"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.100.5588"
+
+[[inputs.snmp.field]]
+name = "System Status"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4123"
+
+[[inputs.snmp.field]]
+name = "System Model Number"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4240"
+
+[[inputs.snmp.field]]
+name = "Server Class"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.4553"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 01"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6109"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 02"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6110"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 03"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6111"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 04"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6112"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 05"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6113"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 06"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6114"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 07"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6115"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 08"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6116"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 09"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6117"
+
+[[inputs.snmp.field]]
+name = "Sensor Order Identifier - Slot 10"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.1.6118"
+
+[[inputs.snmp.field]]
+name = "Too Many Sensors"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.100.5423"
+
+[[inputs.snmp.field]]
+name = "Slots not available"
+oid = ".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.3.20.100.6119"
+
